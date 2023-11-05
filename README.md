@@ -1,7 +1,7 @@
 # Cooking-Recipe-MRC
 This is a large language model fine-tuned on a cooking dataset (in SQuAD 1.0 format) for the specific use case of Machine Reading Comprehension (MRC), or Extractive Question Answering. The deployed model can be accessed through this [HuggingFace's Space](https://huggingface.co/spaces/Hieu-Pham/Cooking-Recipe-MRC).
 
-![UI of the Deployed Model](model_ui.png)
+![UI of the Deployed Model]
 
 ## Technologies Details 
 + **Base Model**: [Meta's Llama2-7B-hf model](https://huggingface.co/meta-llama/Llama-2-7b-hf)
