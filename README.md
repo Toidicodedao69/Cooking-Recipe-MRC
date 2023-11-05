@@ -12,9 +12,9 @@ This is a large language model fine-tuned on a cooking dataset (in SQuAD 1.0 for
   - Deployment: Gradio
  
 ## Finetuning Details
-+ The recipe dataset used for fine-tuning the model was split into 80& training (1.79k rows), 10% validation (224 rows), and 10% test (225 rows). The dataset was uploaded to [Hugging Face](https://huggingface.co/datasets/Hieu-Pham/cooking_squad_splitted)
++ The recipe dataset used for fine-tuning the model was split into 80% training (1.79k rows), 10% validation (224 rows), and 10% test (225 rows). The dataset was uploaded to [Hugging Face](https://huggingface.co/datasets/Hieu-Pham/cooking_squad_splitted)
 + Fine-Tuning Techniques: [QLoRA](https://arxiv.org/abs/2305.14314) & [IA3](https://arxiv.org/abs/2205.05638)
-+ Fine-tuning Configurations can be found in the [notebooks](Colab's Notebooks)
++ Fine-tuning Configurations can be found in the [notebooks](/Colab's Notebooks)
 + 2 main approaches used for model predictions:
   - **Extractive QA**: Predicts the answer's position inside the given context.
   - **Causal LM**: Predicts (Generates) the answer based on the given context and question.
