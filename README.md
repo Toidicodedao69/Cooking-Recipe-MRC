@@ -14,19 +14,21 @@ This is a large language model fine-tuned on a cooking dataset (in SQuAD 1.0 for
 ## Finetuning Details
 + The recipe dataset used for fine-tuning the model was split into 80% training (1.79k rows), 10% validation (224 rows), and 10% test (225 rows). The dataset was uploaded to [Hugging Face](https://huggingface.co/datasets/Hieu-Pham/cooking_squad_splitted)
 + Fine-Tuning Techniques: [QLoRA](https://arxiv.org/abs/2305.14314) & [IA3](https://arxiv.org/abs/2205.05638)
-+ Fine-tuning Configurations can be found in the [notebooks](/Colab's Notebooks)
++ Fine-tuning Configurations can be found in the Notebooks folder.
 + 2 main approaches used for model predictions:
   - **Extractive QA**: Predicts the answer's position inside the given context.
   - **Causal LM**: Predicts (Generates) the answer based on the given context and question.
   **Differences between the 2 approaches are further explained in this [video](https://youtu.be/UE6FPYfwWuE)**
 
 ## Evaluation Results
-Exact-Match and F1 score metrics were used to evaluate the fine-tuned model. The following table is the evaluation results of the Causal LM models.
+Exact-Match and F1 score metrics were used to evaluate the fine-tuned model. The following table shows the evaluation results of the Causal LM models. 
 
 |Metric     | Base Model         | QLoRA  | IA3
 | ------------- |:-------------:| -----:| ---
 | Exact-Match Score     | 2. 67 | 13.78 | 8.45
 | F1 Score      | 65.45     |   76.13 | 71.41
+
+The visualizations of the results using Power BI can be found [here](Prediction Sets (Causal LM)/Custom Prompting/Results Visualization.pbix)
 
 Evaluation of the Extractive QA models was not successful because the Llama models were not supported for the task of extractive QA on Hugging Face
 
