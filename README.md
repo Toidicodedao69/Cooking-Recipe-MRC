@@ -28,7 +28,7 @@ Exact-Match and F1 score metrics were used to evaluate the fine-tuned model. The
 | Exact-Match Score     | 2. 67 | 13.78 | 8.45
 | F1 Score      | 65.45     |   76.13 | 71.41
 
-The visualizations of the results using Power BI can be found [here](Prediction Sets (Causal LM)/Custom Prompting/Results Visualization.pbix)
+The visualizations of the results using Power BI can be found [here](/"Prediction Sets (Causal LM)"/"Custom Prompting"/"Results Visualization.pbix")
 
 Evaluation of the Extractive QA models was not successful because the Llama models were not supported for the task of extractive QA on Hugging Face
 
